@@ -1,2 +1,4 @@
 /etc/init.d/networking restart      #setting static IP
 /etc/init.d/isc-dhcp-server start   #starting the dhcp server
+
+ip route add 0.0.0.0/0 via 50.0.0.9

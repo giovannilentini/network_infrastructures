@@ -4,8 +4,9 @@ iface eth1 inet static
     netmask 255.255.255.0
 
 #connection to r7
-auto eth3
-iface eth3 inet static
+auto eth0
+iface eth0 inet static
     address 151.0.45.1
     netmask 255.255.255.254 
+    gateway 151.0.45.0
     
