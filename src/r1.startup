@@ -1,0 +1,2 @@
+/etc/init.d/networking restart      #setting static IP
+/etc/init.d/isc-dhcp-server start   #starting the dhcp server
