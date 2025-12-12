@@ -1,22 +1,23 @@
+#connection to r1
 auto eth0
 iface eth0 inet static
-    address 192.168.1.1
-    netmask 255.255.255.0
+    address 50.0.0.9
+    netmask 255.255.255.254
 
 #connection to r2
 auto eth1
 iface eth1 inet static
-    address 50.0.0.0
+    address 50.0.0.5
     netmask 255.255.255.254
 
 #connection to r3
 auto eth2
 iface eth2 inet static
-    address 50.0.0.2
+    address 50.0.0.7
     netmask 255.255.255.254
 
-#connection to r4
+#connection to r5
 auto eth3
 iface eth3 inet static
-    address 50.0.0.8
-    netmask 255.255.255.254
+    address 193.201.28.0
+    netmask 255.255.254.0   

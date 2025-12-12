@@ -1,0 +1,4 @@
+auto eth3
+iface eth3 inet static
+    address 23.75.200.1
+    netmask 255.255.255.0

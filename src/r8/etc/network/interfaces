@@ -1,0 +1,5 @@
+#connection to r9
+auto eth3
+iface eth3 inet static
+    address 145.97.4.97
+    netmask 255.255.255.224

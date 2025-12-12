@@ -1,0 +1,6 @@
+#connection to r10
+auto eth3
+iface eth3 inet static
+    address 151.0.45.0
+    netmask 255.255.255.254   
+    

@@ -1,0 +1,5 @@
+#connection to r4
+auto eth0
+iface eth0 inet static
+    address 193.201.29.255
+    netmask 255.255.254.0   
