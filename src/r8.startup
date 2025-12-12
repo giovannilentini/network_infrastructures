@@ -1,1 +1,2 @@
 /etc/init.d/networking restart      #setting static IP
+/etc/init.d/quagga restart          #start quagga

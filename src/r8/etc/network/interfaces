@@ -1,3 +1,21 @@
+#connection to r5
+auto eth0
+iface eth0 inet static
+    address 100.0.0.1
+    netmask 255.255.255.254   
+
+#connection to r6
+auto eth1
+iface eth1 inet static
+    address 100.0.0.11
+    netmask 255.255.255.254     
+
+#connection to r7
+auto eth2
+iface eth2 inet static
+    address 100.0.0.3
+    netmask 255.255.255.254   
+
 #connection to r9
 auto eth3
 iface eth3 inet static
