@@ -1,0 +1,6 @@
+#on pc1 to configure access via ssh
+ssh-keygen -t rsa -f /root/.ssh/id_rsa -N ""    #creating public key
+ssh-copy-id ubuntu@23.75.100.10     #then put the password "password"
+
+#always on pc1
+ssh -NL 9000:151.0.45.1:7070 ubuntu@23.75.100.10 -4
