@@ -2,3 +2,7 @@
 /etc/init.d/isc-dhcp-server start   #starting the dhcp server
 
 ip route add 0.0.0.0/0 via 50.0.0.9
+
+#configuring nat
+iptables -t nat -A POSTROUTING ! -o eth0 -j MASQUERADE 
+iptables -A FORWARD -o eth0 -m state --state NEW -j DROP

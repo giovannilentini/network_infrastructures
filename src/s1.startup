@@ -1,1 +1,15 @@
 /etc/init.d/networking restart      #setting static IP
+
+#create user ubuntu
+useradd -m -s /bin/bash ubuntu
+echo -e 'password\npassword\n' | passwd ubuntu
+
+mkdir /home/ubuntu/.ssh
+touch /home/ubuntu/.ssh/authorized_keys
+
+chown ubuntu:ubuntu /home/ubuntu/.ssh
+chmod 700 /home/ubuntu/.ssh
+chown ubuntu:ubuntu /home/ubuntu/.ssh/authorized_keys
+chmod 600 /home/ubuntu/.ssh/authorized_keys
+
+/etc/init.d/ssh start               #starting ssh server

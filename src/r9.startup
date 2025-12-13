@@ -1,2 +1,6 @@
 /etc/init.d/networking restart      #setting static IP
 /etc/init.d/isc-dhcp-server start   #starting the dhcp server
+
+#configuring nat
+iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE    
+iptables -A FORWARD -o eth1 -m state --state NEW -j DROP

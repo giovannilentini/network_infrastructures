@@ -1,2 +1,4 @@
 /etc/init.d/networking restart      #setting static IP
 /etc/init.d/quagga restart          #start quagga
+
+ip route add 50.0.0.0/24 via 193.201.28.1
