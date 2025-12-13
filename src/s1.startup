@@ -1,4 +1,4 @@
-/etc/init.d/networking restart      #setting static IP
+/etc/init.d/networking restart      #setting static IP   
 
 #create user ubuntu
 useradd -m -s /bin/bash ubuntu
